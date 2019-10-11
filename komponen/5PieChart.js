@@ -20,36 +20,36 @@ class App extends Component {
                 data={
                   [
                     {
-                      name: "Seoul",
-                      population: 21500000,
+                      name: "Jawa Barat",
+                      population: 48.0,
                       color: "rgba(131, 167, 234, 1)",
                       legendFontColor: "white",
                       legendFontSize: 11
                     },
                     {
-                      name: "Toronto",
-                      population: 2800000,
+                      name: "Jawa Timur",
+                      population: 39.2,
                       color: "red",
                       legendFontColor: "white",
                       legendFontSize: 11
                     },
                     {
-                      name: "Beijing",
-                      population: 527612,
+                      name: "Jawa Tengah",
+                      population: 34.2,
                       color: "yellow",
                       legendFontColor: "white",
                       legendFontSize: 11
                     },
                     {
-                      name: "New York",
-                      population: 8538000,
+                      name: "Sumatera Utara",
+                      population: 14.2,
                       color: "orange",
                       legendFontColor: "white",
                       legendFontSize: 11
                     },
                     {
-                      name: "Moscow",
-                      population: 11920000,
+                      name: "Banten",
+                      population: 12.4,
                       color: "green",
                       legendFontColor: "white",
                       legendFontSize: 11
