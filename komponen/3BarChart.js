@@ -46,7 +46,6 @@ class App extends Component {
                     borderRadius: 16
                 }
                 }}
-                bezier
                 style={{
                 marginVertical: 8,
                 borderRadius: 16
