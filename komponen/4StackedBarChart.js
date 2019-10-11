@@ -6,7 +6,7 @@ import {
   Text,
 } from 'react-native';
 import {
-  BarChart,
+  StackedBarChart,
 } from "react-native-chart-kit";
 
 class App extends Component {
@@ -14,35 +14,25 @@ class App extends Component {
     return (
         <View style={styles.sectionContainer}>
             <Text>
-                3. Bar Chart
+                4. Stacked Bar Chart
             </Text>
-            <BarChart
+            <StackedBarChart
                 data={{
-                labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
-                datasets: [
-                    {
-                    data: [
-                        Math.random() * 100,
-                        Math.random() * 100,
-                        Math.random() * 100,
-                        Math.random() * 100,
-                        Math.random() * 100,
-                        Math.random() * 100
-                    ]
-                    }
-                ]
+                  labels: ["Test1", "Test2"],
+                  legend: ["L1", "L2", "L3"],
+                  data: [[60, 60, 60], [30, 30, 60]],
+                  barColors: ["#dfe4ea", "#ced6e0", "#a4b0be"]
                 }}
                 width={Dimensions.get("window").width - 50} // from react-native
                 height={220}
                 yAxisLabel={"Rp"}
                 chartConfig={{
-                backgroundColor: "yellow",
-                backgroundGradientFrom: "yellow",
+                backgroundColor: "green",
+                backgroundGradientFrom: "green",
                 backgroundGradientTo: "yellow",
                 decimalPlaces: 2, // optional, defaults to 2dp
-                color: (opacity = 1) => `black`,
-                labelColor: (opacity = 1) => `black`,
-                barPercentage:1,
+                color: (opacity = 1) => `white`,
+                labelColor: (opacity = 1) => `white`,
                 style: {
                     borderRadius: 16
                 }

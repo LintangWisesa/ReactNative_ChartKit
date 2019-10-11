@@ -14,6 +14,7 @@ import {
 import LineChart from './komponen/1LineChart'
 import Bezier from './komponen/2BezierLineChart'
 import BarChart from './komponen/3BarChart'
+import StackBar from './komponen/4StackedBarChart'
 
 class App extends Component {
   render(){
@@ -35,6 +36,9 @@ class App extends Component {
 
               {/* 3. BarChart */}
               <BarChart/>
+
+              {/* 4. StackedBarChart */}
+              <StackBar/>
 
             </View>
           </ScrollView>
