@@ -15,6 +15,7 @@ import LineChart from './komponen/1LineChart'
 import Bezier from './komponen/2BezierLineChart'
 import BarChart from './komponen/3BarChart'
 import StackBar from './komponen/4StackedBarChart'
+import Pie from './komponen/5PieChart'
 
 class App extends Component {
   render(){
@@ -22,10 +23,11 @@ class App extends Component {
       <>
         <StatusBar barStyle="dark-content" />
         <SafeAreaView>
+          <Header />
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
             style={styles.scrollView}>
-            <Header />
+            
             <View style={styles.body}>
               
               {/* 1. LineChart */}
@@ -40,6 +42,10 @@ class App extends Component {
               {/* 4. StackedBarChart */}
               <StackBar/>
 
+              {/* 5. PieChart */}
+              <Pie/>
+
+              <View style={{marginVertical:200}}></View>
             </View>
           </ScrollView>
         </SafeAreaView>

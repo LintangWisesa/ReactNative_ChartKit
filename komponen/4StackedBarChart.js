@@ -29,7 +29,7 @@ class App extends Component {
                 chartConfig={{
                 backgroundColor: "green",
                 backgroundGradientFrom: "green",
-                backgroundGradientTo: "yellow",
+                backgroundGradientTo: "green",
                 decimalPlaces: 2, // optional, defaults to 2dp
                 color: (opacity = 1) => `white`,
                 labelColor: (opacity = 1) => `white`,
