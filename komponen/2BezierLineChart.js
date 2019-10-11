@@ -14,7 +14,7 @@ class App extends Component {
     return (
         <View style={styles.sectionContainer}>
             <Text>
-                1. Line Chart
+                2. Bezier Line Chart
             </Text>
             <LineChart
                 data={{
@@ -36,9 +36,9 @@ class App extends Component {
                 height={220}
                 yAxisLabel={"Rp"}
                 chartConfig={{
-                backgroundColor: "red",
-                backgroundGradientFrom: "red",
-                backgroundGradientTo: "red",
+                backgroundColor: "#e26a00",
+                backgroundGradientFrom: "#fb8c00",
+                backgroundGradientTo: "#ffa726",
                 decimalPlaces: 2, // optional, defaults to 2dp
                 color: (opacity = 1) => `white`,
                 labelColor: (opacity = 1) => `white`,
@@ -46,6 +46,7 @@ class App extends Component {
                     borderRadius: 16
                 }
                 }}
+                bezier
                 style={{
                 marginVertical: 8,
                 borderRadius: 16

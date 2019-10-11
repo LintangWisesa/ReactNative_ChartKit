@@ -12,6 +12,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import LineChart from './komponen/1LineChart'
+import Bezier from './komponen/2BezierLineChart'
+import BarChart from './komponen/3BarChart'
 
 class App extends Component {
   render(){
@@ -27,6 +29,12 @@ class App extends Component {
               
               {/* 1. LineChart */}
               <LineChart/>
+
+              {/* 2. BezierLineChart */}
+              <Bezier/>
+
+              {/* 3. BarChart */}
+              <BarChart/>
 
             </View>
           </ScrollView>

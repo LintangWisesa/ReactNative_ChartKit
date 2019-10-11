@@ -6,7 +6,7 @@ import {
   Text,
 } from 'react-native';
 import {
-  LineChart,
+  BarChart,
 } from "react-native-chart-kit";
 
 class App extends Component {
@@ -14,9 +14,9 @@ class App extends Component {
     return (
         <View style={styles.sectionContainer}>
             <Text>
-                1. Line Chart
+                3. Bar Chart
             </Text>
-            <LineChart
+            <BarChart
                 data={{
                 labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
                 datasets: [
@@ -36,16 +36,17 @@ class App extends Component {
                 height={220}
                 yAxisLabel={"Rp"}
                 chartConfig={{
-                backgroundColor: "red",
-                backgroundGradientFrom: "red",
-                backgroundGradientTo: "red",
+                backgroundColor: "yellow",
+                backgroundGradientFrom: "yellow",
+                backgroundGradientTo: "yellow",
                 decimalPlaces: 2, // optional, defaults to 2dp
-                color: (opacity = 1) => `white`,
-                labelColor: (opacity = 1) => `white`,
+                color: (opacity = 1) => `black`,
+                labelColor: (opacity = 1) => `black`,
                 style: {
                     borderRadius: 16
                 }
                 }}
+                bezier
                 style={{
                 marginVertical: 8,
                 borderRadius: 16
