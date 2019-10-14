@@ -8,7 +8,18 @@
     $ npm i react-native-chart-kit react-native-svg
     ```
 
-    Then follow these codes below to create several charts on your React Native application:
+    Then import it, so you can use it to create several charts on your React Native application.
+
+    ```javascript
+    import {
+        LineChart,
+        BarChart,
+        PieChart,
+        ProgressChart,
+        ContributionGraph,
+        StackedBarChart
+    } from "react-native-chart-kit";
+    ```
 
 #
 
