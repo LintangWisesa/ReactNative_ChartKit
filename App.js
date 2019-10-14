@@ -16,6 +16,7 @@ import Bezier from './komponen/2BezierLineChart'
 import BarChart from './komponen/3BarChart'
 import StackBar from './komponen/4StackedBarChart'
 import Pie from './komponen/5PieChart'
+import Progress from './komponen/6ProgressChart'
 
 class App extends Component {
   render(){
@@ -44,6 +45,9 @@ class App extends Component {
 
               {/* 5. PieChart */}
               <Pie/>
+
+              {/* 6. Progress Chart */}
+              <Progress/>
 
               <View style={{marginVertical:200}}></View>
             </View>
