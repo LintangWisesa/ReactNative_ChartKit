@@ -17,6 +17,7 @@ import BarChart from './komponen/3BarChart'
 import StackBar from './komponen/4StackedBarChart'
 import Pie from './komponen/5PieChart'
 import Progress from './komponen/6ProgressChart'
+import Contrib from './komponen/7ContribGraph'
 
 class App extends Component {
   render(){
@@ -48,6 +49,9 @@ class App extends Component {
 
               {/* 6. Progress Chart */}
               <Progress/>
+
+              {/* 7. Contribution Graph */}
+              <Contrib/>
 
               <View style={{marginVertical:200}}></View>
             </View>
