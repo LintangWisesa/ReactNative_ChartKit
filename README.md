@@ -10,7 +10,9 @@
 
     Then follow these codes below to create several charts on your React Native application:
 
-1. Create a __Line Chart__
+#
+
+2. Create a __Line Chart__
 
     ![LineChart](./screenshot1.png)
 
@@ -52,7 +54,9 @@
     />
     ```
 
-1. Create a __Bezier Line Chart__
+#
+
+3. Create a __Bezier Line Chart__
 
     ![BezierLineChart](./screenshot2.png)
 
@@ -95,7 +99,9 @@
     />
     ```
 
-1. Create a __Bar Chart__
+#
+
+4. Create a __Bar Chart__
 
     ![BarChart](./screenshot3.png)
 
@@ -138,7 +144,9 @@
     />
     ```
 
-2. Create a __Stacked Bar Chart__
+#
+
+5. Create a __Stacked Bar Chart__
 
     ![StackBarChart](./screenshot4.png)
 
@@ -171,7 +179,9 @@
     />
     ```
 
-2. Create a __Pie Chart__
+#
+
+6. Create a __Pie Chart__
 
     ![PieChart](./screenshot5.png)
 
@@ -229,6 +239,87 @@
         accessor="population"
         paddingLeft="15"
         absolute
+        style={{
+            marginVertical: 8,
+            borderRadius: 16
+        }}
+    />
+    ```
+
+#
+
+7. Create a __Progress Chart__
+
+    ![PieChart](./screenshot6.png)
+
+    ```javascript
+    <ProgressChart
+        data={
+            {
+            labels: ["Andi", "Budi", "Caca"],
+            data: [0.3, 0.6, 0.9]
+            }
+        }
+        width={Dimensions.get("window").width - 50} // from react-native
+        height={220}
+        chartConfig={
+            {
+            backgroundGradientFrom: 'purple',
+            backgroundGradientFromOpacity: 1,
+            backgroundGradientTo: 'purple',
+            backgroundGradientToOpacity: 0.5,
+            color: (opacity = 1) => `rgba(26, 255, 146, ${opacity})`,
+            strokeWidth: 2, // optional, default 3
+            }
+        }
+        backgroundColor="green"
+        paddingLeft="15"
+        absolute
+        style={{
+            marginVertical: 8,
+            borderRadius: 16
+        }}
+    />
+    ```
+
+#
+
+8. Create a __Contribution Graph__
+
+    ![PieChart](./screenshot7.png)
+
+    ```javascript
+    <ContributionGraph
+        values={
+            [
+            { date: "2017-01-02", count: 1 },
+            { date: "2017-01-03", count: 2 },
+            { date: "2017-01-04", count: 3 },
+            { date: "2017-01-05", count: 4 },
+            { date: "2017-01-06", count: 5 },
+            { date: "2017-01-30", count: 2 },
+            { date: "2017-01-31", count: 3 },
+            { date: "2017-03-01", count: 2 },
+            { date: "2017-04-02", count: 4 },
+            { date: "2017-03-05", count: 2 },
+            { date: "2017-02-30", count: 4 }
+            ]
+        }
+        endDate={new Date('2017-04-01')}
+        numDays={105}
+        width={Dimensions.get("window").width - 50} // from react-native
+        height={220}
+        chartConfig={
+            {
+            backgroundGradientFrom: 'pink',
+            backgroundGradientFromOpacity: 0.5,
+            backgroundGradientTo: 'red',
+            backgroundGradientToOpacity: 0.5,
+            color: (opacity = 1) => `rgba(255, 0, 0, ${opacity})`,
+            strokeWidth: 2, // optional, default 3
+            }
+        }
+        paddingLeft="15"
         style={{
             marginVertical: 8,
             borderRadius: 16
