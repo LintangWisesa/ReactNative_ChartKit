@@ -1,6 +1,6 @@
 ![simplinnovation](https://4.bp.blogspot.com/-f7YxPyqHAzY/WJ6VnkvE0SI/AAAAAAAADTQ/0tDQPTrVrtMAFT-q-1-3ktUQT5Il9FGdQCLcB/s350/simpLINnovation1a.png)
 
-# Data Visualization using React Native & Chart Kit
+# Data Visualization using React Native Chart Kit
 
 1. Create a React Native project (I'm using the latest __*RN 0.61.2*__ and __*Genymotion*__ as Android emulator), then install __*react-native-chart-kit*__ and __*react-native-svg*__ package.
 
